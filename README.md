@@ -1,5 +1,5 @@
 # Lotus core
 
-Native C runtime for [Lotus](https://github.com/LINQeee/lotus).
+Native C runtime for Lotus.
 
-[Runtime functions](https://github.com/LINQeee/lotus/blob/main/docs/runtime.mdx) · [Native development](https://github.com/LINQeee/lotus/blob/main/docs/development/native.mdx) · [Build and contribute](https://github.com/LINQeee/lotus/blob/main/docs/development/workflow.mdx)
+[Runtime functions](https://lotus-8e1f9387.mintlify.site/runtime) · [Native development](https://lotus-8e1f9387.mintlify.site/development/native) · [Build and contribute](https://lotus-8e1f9387.mintlify.site/development/workflow)
