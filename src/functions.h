@@ -5,10 +5,10 @@
 
 #include "../lotus.h"
 
-void print(int count, ...);
-LotusString *input(void);
-bool toBool(LotusValue value);
-int toInt(LotusString *str);
-int randomNum(int min, int max);
+LOTUS_EXPORT void print(int count, ...);
+LOTUS_EXPORT LotusString *input(void);
+LOTUS_EXPORT bool toBool(const LotusValue *value);
+LOTUS_EXPORT int toInt(LotusString *str);
+LOTUS_EXPORT int randomNum(int min, int max);
 
 #endif

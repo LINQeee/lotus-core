@@ -53,6 +53,7 @@ typedef enum {
     LOTUS_UNKNOWN
 } LotusType;
 
+// LOTUS_ANY arguments borrow a const LotusValue pointer for the duration of the call
 typedef struct {
     LotusType type;
 
