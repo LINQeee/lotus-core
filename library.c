@@ -1,8 +1,14 @@
 #include "lotus.h"
 #include "src/functions.h"
 #include "internal/string_runtime.h"
+#include "internal/array_runtime.h"
 
 LOTUS_NATIVE_LIBRARY {
+    LOTUS_FUNCTION(_arrayCreate, LOTUS_ARRAY, LOTUS_I32, LOTUS_I32);
+    LOTUS_FUNCTION(_arrayAt, LOTUS_ARRAY, LOTUS_ARRAY, LOTUS_I32);
+    LOTUS_FUNCTION(_arrayLength, LOTUS_I32, LOTUS_ARRAY);
+    LOTUS_FUNCTION(_arrayRetain, LOTUS_VOID, LOTUS_ARRAY);
+    LOTUS_FUNCTION(_arrayRelease, LOTUS_VOID, LOTUS_ARRAY);
     LOTUS_FUNCTION(randomNum, LOTUS_I32, LOTUS_I32, LOTUS_I32);
     LOTUS_FUNCTION(toBool, LOTUS_BOOL, LOTUS_ANY);
     LOTUS_VARIADIC(print, LOTUS_VOID, LOTUS_ANY);

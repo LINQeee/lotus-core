@@ -10,6 +10,7 @@ add_library(lotus_core SHARED
         src/io.c
         src/conversion.c
         src/random.c
+        internal/array_runtime.c
         internal/string_runtime.c
         utils/string_utils.c)
 target_include_directories(lotus_core PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}")

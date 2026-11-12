@@ -39,7 +39,7 @@ typedef struct {
     size_t references; // Zero marks static string literals
 } LotusString;
 
-// Native arguments are borrowed; string results transfer one owned reference
+// Native arguments are borrowed; memory results transfer one owned reference
 typedef enum {
     LOTUS_I32,
     LOTUS_I64,
@@ -50,7 +50,14 @@ typedef enum {
     LOTUS_VOID,
     LOTUS_ANY,
     LOTUS_FUNCTION,
-    LOTUS_UNKNOWN
+    LOTUS_UNKNOWN,
+    LOTUS_I32_ARRAY,
+    LOTUS_I64_ARRAY,
+    LOTUS_F32_ARRAY,
+    LOTUS_F64_ARRAY,
+    LOTUS_BOOL_ARRAY,
+    LOTUS_STRING_ARRAY,
+    LOTUS_ARRAY
 } LotusType;
 
 // LOTUS_ANY arguments borrow a const LotusValue pointer for the duration of the call
